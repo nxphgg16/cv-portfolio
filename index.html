@@ -1,328 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phuong Nguyen</title>
-    <link rel="stylesheet" href="css/grid.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/js/all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-     />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Phuong Nguyen</title>
+        <link rel="stylesheet" href="css/grid.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/js/all.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
 
-     <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header class="header ">
-        <div class="nav ">
-            <!-- theme toggler  -->
-            <div id="theme-toggler" class="theme-toggler">
-                <i class="fas fa-moon icon-moon"></i>
-                <i class="fas fa-toggle-on hidden "></i>
-                <i class="fas fa-toggle-off hidden"></i>
-                <i class="fas fa-power-off hidden"></i>
-            </div>
-            
-           
-            <!-- pc -->
-            <nav class="nav-pc">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#work" class="nav-link">Work</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav">
+                <!-- theme toggler  -->
+                <div id="theme-toggler" class="theme-toggler">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-toggle-on hidden"></i>
+                    <i class="fas fa-toggle-off hidden"></i>
+                    <i class="fas fa-power-off hidden"></i>
+                </div>
 
-            <label for="nav-mobile-input" class="nav__bars" id="nav-bars">
-                <i class="fas fa-bars nav-bars-icon"></i>
-            </label>
+                <!-- pc -->
+                <nav class="nav-pc">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#work" class="nav-link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <!-- <div class="nav__bars" id="nav-bars">
+                <label for="nav-mobile-input" class="nav__bars" id="nav-bars">
+                    <i class="fas fa-bars nav-bars-icon"></i>
+                </label>
+
+                <!-- <div class="nav__bars" id="nav-bars">
                 <i class="fas fa-bars nav-bars-icon"></i>
             </div> -->
 
-            <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                <input
+                    type="checkbox"
+                    hidden
+                    name=""
+                    class="nav-input nav-checbox"
+                    id="nav-mobile-input"
+                />
 
-            <label for="nav-mobile-input"  class="nav-overlay"></label>
+                <label for="nav-mobile-input" class="nav-overlay"></label>
 
-            <!-- mobile -->
-            <nav class="nav__mobile .show-on-tablet-mobile" id="nav-mobile">
-                <label for="nav-mobile-input" class="nav__close">
-                    <i class="fas fa-times nav-close-icon"></i>
-                </label>
+                <!-- mobile -->
+                <nav class="nav__mobile show-on-tablet-mobile" id="nav-mobile">
+                    <label for="nav-mobile-input" class="nav__close">
+                        <i class="fas fa-times nav-close-icon"></i>
+                    </label>
 
-                <!-- <div class="nav__close">
-                    <i class="fas fa-times nav-close-icon"></i>
-                </div> -->
+                    <div class="user">
+                        <img src="images/phuongcv.jpg" alt="" />
+                    </div>
 
-                <div class="user">
-                    <img src="images/phuongcv.jpg" alt="">
-                    
-                </div>
+                    <div class="user-text">
+                        <h3>Phuong Nguyen</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
 
-                <div class="user-text">
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <label for="nav-mobile-input">
+                                <a
+                                    href="#work"
+                                    id="nav__mobile-link"
+                                    class="nav__mobile-link active"
+                                    >Work</a
+                                ></label
+                            >
+                        </li>
+                        <li class="nav__mobile-item">
+                            <label for="nav-mobile-input">
+                                <a
+                                    href="#about"
+                                    id="nav-mobile-link"
+                                    class="nav__mobile-link"
+                                    >About</a
+                                ></label
+                            >
+                        </li>
+                        <li class="nav__mobile-item">
+                            <label for="nav-mobile-input">
+                                <a
+                                    href="#contact"
+                                    id="nav__mobile-link"
+                                    class="nav__mobile-link"
+                                    >Contact</a
+                                ></label
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- home---------------------------------------------------- -->
+        <section class="home" id="home">
+            <div class="container">
+                <div class="content">
                     <h3>Phuong Nguyen</h3>
-                    <p>UI/UX Designer</p>
+                    <p>I am a UI/UX Designer</p>
+                    <a href="#contact" class="btn home-btn">Contact</a>
                 </div>
 
-                <ul class="nav__mobile-list">
-                    <li class="nav__mobile-item">
-                        <label for="nav-mobile-input">
-                            <a href="#work" id="nav__mobile-link" class="nav__mobile-link active">Work</a></label>
-                    </li>
-                    <li class="nav__mobile-item">
-                        <label for="nav-mobile-input">
-                            <a href="#about" id="nav-mobile-link" class="nav__mobile-link">About</a></label>
-                    </li>
-                    <li class="nav__mobile-item">
-                        <label for="nav-mobile-input">
-                            <a href="#contact" id="nav__mobile-link" class="nav__mobile-link">Contact</a></label>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                <div class="images">
+                    <img
+                        src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.
+                1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt=""
+                    />
+                </div>
 
-
-    <!-- home---------------------------------------------------- -->
-    <section class="home" id="home">
-        <div class="container">
-            <div class="content">
-                <h3>Phuong Nguyen</h3>
-                <p>I am a UI/UX Designer</p>
-                <a href="#contact" class="btn home-btn">Contact</a>
-            </div>
-        
-           
-
-            <div class="images">
-                <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.
-                1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
-            </div>
-
-            <div class="share hidden">
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/mitom.xc" class="share-link">
-                            <i class="fab fa-facebook-f share-link-icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/phuongnguyen19" class="share-link" >
-                            <i class="fab fa-behance share-link-icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dribbble.com/xuaphuong16" class="share-link">
-                            <i class="fab fa-dribbble share-link-icon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- home---------------------------------------------------- -->
-
-    <!-- about---------------------------------------------------- -->
-    <section class="about" id="about">
-        <h1 class="heading heading-about"> <span>about</span> me </h1>
-
-        <div class="row">
-            <div class="col l-6 m-6 c-12">
-                <div class="about-img">
-                    <img src="images/phuongcv.jpg" alt="">
+                <div class="share hidden">
+                    <ul>
+                        <li>
+                            <a
+                                href="https://www.facebook.com/mitom.xc"
+                                class="share-link"
+                            >
+                                <i
+                                    class="fab fa-facebook-f share-link-icon"
+                                ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.behance.net/phuongnguyen19"
+                                class="share-link"
+                            >
+                                <i class="fab fa-behance share-link-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://dribbble.com/xuaphuong16"
+                                class="share-link"
+                            >
+                                <i class="fab fa-dribbble share-link-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </section>
+        <!-- home---------------------------------------------------- -->
 
-            <div class="col l-6 m-6 c-12">
-                <div class="about-info">
-                    <h2> Phuong Nguyen</h2>
-                    <p>I'm a graphic designer. I live in Dong Nai, Vietnam. 
-                        I'm studying at Arena Multimedia and 
-                        I'm a guy love designing and reading.</p>
-                    <a href="#contact" class="btn home-btn btn-about">Contact</a>    
-                </div>
-            </div>
-        </div>
+        <!-- about---------------------------------------------------- -->
+        <section class="about" id="about">
+            <h1 class="heading heading-about"><span>about</span> me</h1>
 
-        <div class="row">
-            <div class="col l-6 m-12 c-12">
-                <div class="progress">
-                    <h3> Web Design <span>70%</span> </h3>
-                    <div class="bar bar-1-1"><span></span></div>
-                    <h3> Graphic Design <span>75%</span> </h3>
-                    <div class="bar bar-1-2"><span></span></div>
-                    <h3> Illustration <span>75%</span> </h3>
-                    <div class="bar bar-1-3"><span></span></div>
-                </div>
-            </div>
-            
-            <div class="col l-6 m-12 c-12">
-                <div class="progress">
-                    <h3> HTML <span>85%</span> </h3>
-                    <div class="bar bar-2-1"><span></span></div>
-                    <h3> CSS <span>70%</span> </h3>
-                    <div class="bar bar-2-2"><span></span></div>
-                    <h3> WordPress <span>65%</span> </h3>
-                    <div class="bar bar-2-3"><span></span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about---------------------------------------------------- -->
-
-
-    <!-- portfolio============================================= -->
-    <section class="work" id="work">
-        <h1 class="heading heading-work"> Portfolio </h1>
-
-        <div class="row row-work">
-            <div class="col col-work l-6 m-6 c-0">
-                <div class="work-img">
-                    <div class="work-img-item">
-                        <img src="images/brand onico-08.jpg" alt="">
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <div class="about-img">
+                        <img src="images/phuongcv.jpg" alt="" />
                     </div>
+                </div>
+
+                <div class="col l-6 m-6 c-12">
+                    <div class="about-info">
+                        <h2>Phuong Nguyen</h2>
+                        <p>
+                            I'm a graphic designer. I live in Dong Nai, Vietnam.
+                            I'm studying at Arena Multimedia and I'm a guy love
+                            designing and reading.
+                        </p>
+                        <a href="#contact" class="btn home-btn btn-about"
+                            >Contact</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l-6 m-12 c-12">
+                    <div class="progress">
+                        <h3>Web Design <span>70%</span></h3>
+                        <div class="bar bar-1-1"><span></span></div>
+                        <h3>Graphic Design <span>75%</span></h3>
+                        <div class="bar bar-1-2"><span></span></div>
+                        <h3>Illustration <span>75%</span></h3>
+                        <div class="bar bar-1-3"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="col l-6 m-12 c-12">
+                    <div class="progress">
+                        <h3>HTML <span>85%</span></h3>
+                        <div class="bar bar-2-1"><span></span></div>
+                        <h3>CSS <span>70%</span></h3>
+                        <div class="bar bar-2-2"><span></span></div>
+                        <h3>WordPress <span>65%</span></h3>
+                        <div class="bar bar-2-3"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about---------------------------------------------------- -->
+
+        <!-- portfolio============================================= -->
+        <section class="work" id="work">
+            <h1 class="heading heading-work">Portfolio</h1>
+
+            <div class="row row-work">
+                <div class="col col-work l-6 m-6 c-0">
+                    <div class="work-img">
+                        <div class="work-img-item">
+                            <img src="images/brand onico-08.jpg" alt="" />
+                        </div>
+                        <span>Vape E-Liquid | Brand </span>
+                        <h3>Onico</h3>
+                        <a
+                            href="https://www.behance.net/gallery/134317035/ONICO-Vape-E-Liquid"
+                            class="btn btn-work"
+                            >View</a
+                        >
+                    </div>
+                </div>
+
+                <div class="col col-work l-6 m-6 c-0">
+                    <div class="work-img">
+                        <div class="work-img-item">
+                            <img
+                                src="https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-1.2.
+                        1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt=""
+                            />
+                        </div>
+                        <span>Japanese Cuisine | Print </span>
+                        <h3>delicious</h3>
+                        <a
+                            href="https://www.behance.net/gallery/124313431/Eat-like-a-Japanese"
+                            class="btn btn-work"
+                            >View</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-work">
+                <div class="col col-work l-6 m-6 c-0">
+                    <div class="work-img">
+                        <div class="work-img-item">
+                            <img
+                                src="https://images.pexels.com/photos/6811359/pexels-photo-6811359.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-6811359.jpg&fm=jpg"
+                                alt=""
+                            />
+                        </div>
+                        <span>Playing Card | Artwork </span>
+                        <h3>Choices</h3>
+                        <a
+                            href="https://www.behance.net/gallery/134406829/Choices-Playing-Card"
+                            class="btn btn-work"
+                            >View</a
+                        >
+                    </div>
+                </div>
+
+                <div class="col col-work l-6 m-6 c-0">
+                    <div class="work-img">
+                        <div class="work-img-item">
+                            <img
+                                src="https://images.pexels.com/photos/7047191/pexels-photo-7047191.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7047191.jpg&fm=jpg"
+                                alt=""
+                            />
+                        </div>
+                        <span>Virtual Reality | Advertising </span>
+                        <h3>Everlink</h3>
+                        <a
+                            href="https://www.behance.net/gallery/134553567/Everlink"
+                            class="btn btn-work"
+                            >View</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile=========== -->
+            <div class="image-slider show-on-mobile">
+                <div class="work-img image-item">
+                    <img src="images/brand onico-08.jpg" alt="" />
                     <span>Vape E-Liquid | Brand </span>
-                    <h3> Onico</h3>
-                    <a href="https://www.behance.net/gallery/134317035/ONICO-Vape-E-Liquid" class="btn btn-work">View</a>
+                    <h3>Onico</h3>
+                    <a
+                        href="https://www.behance.net/gallery/134317035/ONICO-Vape-E-Liquid"
+                        class="btn btn-work"
+                        >View</a
+                    >
                 </div>
-            </div>
 
-            <div class="col col-work l-6 m-6 c-0">
-                <div class="work-img">
-                    <div class="work-img-item">
-                        <img src="https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-1.2.
-                        1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                    </div>
+                <div class="work-img image-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-1.2.
+                1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt=""
+                    />
                     <span>Japanese Cuisine | Print </span>
-                    <h3> delicious</h3>
-                    <a href="https://www.behance.net/gallery/124313431/Eat-like-a-Japanese" class="btn btn-work">View</a>
+                    <h3>delicious</h3>
+                    <a
+                        href="https://www.behance.net/gallery/124313431/Eat-like-a-Japanese"
+                        class="btn btn-work"
+                        >View</a
+                    >
                 </div>
-            </div>
-        </div>
 
-        <div class="row row-work">
-            <div class="col col-work l-6 m-6 c-0">
-                <div class="work-img">
-                    <div class="work-img-item">
-                        <img src="https://images.pexels.com/photos/6811359/pexels-photo-6811359.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-6811359.jpg&fm=jpg" alt="">
-                    </div>
+                <div class="work-img image-item">
+                    <img
+                        src="https://images.pexels.com/photos/6811359/pexels-photo-6811359.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-6811359.jpg&fm=jpg"
+                        alt=""
+                    />
                     <span>Playing Card | Artwork </span>
-                    <h3> Choices</h3>
-                    <a href="https://www.behance.net/gallery/134406829/Choices-Playing-Card" class="btn btn-work">View</a>
+                    <h3>Choices</h3>
+                    <a
+                        href="https://www.behance.net/gallery/134406829/Choices-Playing-Card"
+                        class="btn btn-work"
+                        >View</a
+                    >
                 </div>
-            </div>
 
-            <div class="col col-work l-6 m-6 c-0">
-                <div class="work-img">
-                    <div class="work-img-item">
-                        <img src="https://images.pexels.com/photos/7047191/pexels-photo-7047191.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7047191.jpg&fm=jpg" alt="">
-                    </div>
+                <div class="work-img image-item">
+                    <img
+                        src="https://images.pexels.com/photos/7047191/pexels-photo-7047191.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7047191.jpg&fm=jpg"
+                        alt=""
+                    />
                     <span>Virtual Reality | Advertising </span>
-                    <h3> Everlink</h3>
-                    <a href="https://www.behance.net/gallery/134553567/Everlink" class="btn btn-work">View</a>
+                    <h3>Everlink</h3>
+                    <a
+                        href="https://www.behance.net/gallery/134553567/Everlink"
+                        class="btn btn-work"
+                        >View</a
+                    >
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- portfolio============================================= -->
 
-        <!-- mobile=========== -->
-        <div class="image-slider show-on-mobile">
-            <div class="work-img image-item">
-                <img src="images/brand onico-08.jpg" alt="">
-                <span>Vape E-Liquid | Brand </span>
-                <h3> Onico</h3>
-                <a href="https://www.behance.net/gallery/134317035/ONICO-Vape-E-Liquid" class="btn btn-work">View</a>
-            </div>
-
-            <div class="work-img image-item">
-                <img src="https://images.unsplash.com/photo-1512132411229-c30391241dd8?ixlib=rb-1.2.
-                1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-                <span>Japanese Cuisine | Print </span>
-                <h3> delicious</h3>
-                <a href="https://www.behance.net/gallery/124313431/Eat-like-a-Japanese" class="btn btn-work">View</a>
-            </div>
-
-            <div class="work-img image-item">
-                <img src="https://images.pexels.com/photos/6811359/pexels-photo-6811359.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-6811359.jpg&fm=jpg" alt="">
-                <span>Playing Card | Artwork </span>
-                <h3> Choices</h3>
-                <a href="https://www.behance.net/gallery/134406829/Choices-Playing-Card" class="btn btn-work">View</a>
-            </div>
-
-            <div class="work-img image-item">
-                <img src="https://images.pexels.com/photos/7047191/pexels-photo-7047191.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7047191.jpg&fm=jpg" alt="">
-                <span>Virtual Reality | Advertising </span>
-                <h3> Everlink</h3>
-                <a href="https://www.behance.net/gallery/134553567/Everlink" class="btn btn-work">View</a>
-            </div>
-        </div>
-    </section>
-    <!-- portfolio============================================= -->
-
-
-    <!-- contact============================================= -->
-    <section class="contact" id="contact">
-        <h1 class="heading heading-contact"> <span>contact</span> me </h1>
+        <!-- contact============================================= -->
+        <section class="contact" id="contact">
+            <h1 class="heading heading-contact"><span>contact</span> me</h1>
             <div class="contact-info">
                 <h3>Let's work together. Say Hello.</h3>
                 <p>or want to have a cup of coffee, send me a message.</p>
-                
-                <a href="https://mail.google.com/" class="btn">nguyenxuanphuongg16@gmail.com</a>
-                <div class="share share-contact ">
+
+                <a href="https://mail.google.com/" class="btn"
+                    >nguyenxuanphuongg16@gmail.com</a
+                >
+                <div class="share share-contact">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/mitom.xc" class="share-link">
-                                <i class="fab fa-facebook-f share-link-icon-contact"></i>
+                            <a
+                                href="https://www.facebook.com/mitom.xc"
+                                class="share-link"
+                            >
+                                <i
+                                    class="fab fa-facebook-f share-link-icon-contact"
+                                ></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.behance.net/phuongnguyen19" class="share-link" >
-                                <i class="fab fa-behance share-link-icon-contact"></i>
+                            <a
+                                href="https://www.behance.net/phuongnguyen19"
+                                class="share-link"
+                            >
+                                <i
+                                    class="fab fa-behance share-link-icon-contact"
+                                ></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://dribbble.com/xuaphuong16" class="share-link">
-                                <i class="fab fa-dribbble share-link-icon-contact"></i>
+                            <a
+                                href="https://dribbble.com/xuaphuong16"
+                                class="share-link"
+                            >
+                                <i
+                                    class="fab fa-dribbble share-link-icon-contact"
+                                ></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="credits"> designed by <span>me</span> | all rights reserved </div>
-    </section>
-    <!-- contact============================================= -->
+            <div class="credits">
+                designed by <span>me</span> | all rights reserved
+            </div>
+        </section>
+        <!-- contact============================================= -->
 
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
 
-    
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-
-    <script type="text/javascript">
-        $(document).on('click', 'nav-mobile-list .nav-mobile-item', function(){
-            $(this).addClass('active').siblings().removeClass('active')
-        });
-    </script>
-    <script src="js/script.js"></script>
-</body>
+        <script type="text/javascript">
+            $(document).on(
+                'click',
+                'nav-mobile-list .nav-mobile-item',
+                function () {
+                    $(this).addClass('active').siblings().removeClass('active');
+                },
+            );
+        </script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
